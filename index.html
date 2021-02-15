@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+  <script type="text/javascript" src="binPack.js"></script>
+  <script type="text/javascript" src="interaction.js"></script>
+  <title>Frame Stack Order Calculator</title>
+</head>
+
+<body onload="init();" class="bg">
+  <div class="middle">
+    <div class="fields">
+      <h3>Stack Properties:</h3>
+      <p>Uniform Frame Height:</p>
+      <input id="txt_frame_height" type="number" name="txt_frame_height" placeholder="410">
+      <br/>
+      <p>Max Stack Layers:</p>
+      <input id="txt_stack_layers" type="number" name="txt_stack_layers" placeholder="8">
+      <br/>
+
+      <h3>Add Frame:</h3>
+      <p>Name:</p>
+      <input id="txt_frame_name" type="text" name="txt_frame_name" placeholder="name">
+      <br/>
+      <p>Frame Width:</p>
+      <input id="txt_frame_width" type="number" name="txt_frame_width" placeholder="340">
+      <br/>
+      <p>Count:</p>
+      <input id="txt_frame_count" type="number" name="txt_frame_count" placeholder="2">
+      <br/>
+  
+      <button type="button" name="btn_add_frame" formtarget="_self" onclick="addFrameToArray()">Add Frame</button>
+      <br/>
+      <br/>
+      <button type="button" name="btn_calculate" formtarget="_self" onclick="callCalculateFrameOrder()">Calculate</button>
+    </div>
+    <br/>
+    <br/>
+    <div class="result">
+      <p id=lbl_res_frame_order>[FRAME ORDER]</p>
+      <p id="lbl_res_stack_preview">[STACK PREVIEW]</p>
+    </div>
+  </div>
+</body>
+</html>

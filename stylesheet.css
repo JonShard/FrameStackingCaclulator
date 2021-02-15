@@ -1,0 +1,42 @@
+.fields {
+    font-size: 25px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.stats {
+    display: none;
+    font-size: 25px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.middle {
+    position: absolute;
+    left: 30%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transform: translateX(-30%);
+    background-color: rgba(50, 50, 50, 0.9);
+}
+.bg {
+    background-color: rgba(50, 50, 50, 0.9);
+    background-image: url("media/background.jpeg");
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+input[type="number"] {
+    font-size: 23px;
+    width: 100px;
+}
+input[type="range"] {
+    width:600px;
+}
+input[type="button"] {
+width: 400px;
+height: auto;
+}
